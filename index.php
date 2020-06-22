@@ -1,4 +1,19 @@
 <?php include("head_nav.html"); ?>
+
+<?php 
+
+    session_start(); // to allow variable transfer between pages...
+    include("config.php");
+
+    // Connect to database... 
+$dbconnect-mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD_DB_NAME);
+
+if(mysqli_connect_errno()) {
+echo "Connection failed:".mysqli_connect_error();
+exit;
+}
+
+?>
             
              <div class="box main">
             <h2>Home</h2>
