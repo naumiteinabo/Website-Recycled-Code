@@ -6,7 +6,7 @@
     include("config.php");
 
     // Connect to database... 
-$dbconnect-mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD_DB_NAME);
+$dbconnect=mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 if(mysqli_connect_errno()) {
 echo "Connection failed:".mysqli_connect_error();
@@ -28,16 +28,6 @@ exit;
                  </p>
                  
             </div>   <!-- / main -->
-            
-             <div class="box side">
-                 
-                 <div class="center_image"> 
-          
-     <img class="img-circle" src="Images/home_flag.jpg" alt="" /> </div>
-                 
-                 <p>Coming from a Kiribati background, we stick to quite a basic diet of sea food and vegetables. But I love trying new foods as well as making it. </p>
-                 
-        
-            </div>   <!-- / side -->
+  
             
 <?php include("footer.html"); ?>
